@@ -1,3 +1,6 @@
+import sys,os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import tensorflow as tf
 from tensorflow.contrib import slim
 from tools.adjust_brightness import adjust_brightness_from_src_to_dst, read_img
