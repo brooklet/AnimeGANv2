@@ -6,7 +6,7 @@ from glob import glob
 import time
 import numpy as np
 from net import generator,generator_lite
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+# os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 def parse_args():
     desc = "AnimeGANv2"
