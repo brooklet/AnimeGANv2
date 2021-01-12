@@ -329,8 +329,8 @@ class AnimeGANv2(object) :
         self.saver.save(self.sess, os.path.join(checkpoint_dir, self.model_name + '.model'), global_step=step)
 
     def load(self, checkpoint_dir):
-        print(" [*] Reading checkpoints...")
         checkpoint_dir = os.path.join(checkpoint_dir, self.model_dir)
+        print(" [*] Reading checkpoints: {}".format(checkpoint_dir))
 
         ckpt = tf.train.get_checkpoint_state(checkpoint_dir) # checkpoint file information
 
